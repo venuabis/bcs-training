@@ -56,7 +56,7 @@
    * C) CSS Engine
    * D) Networking
 #### ANSWER:
-       D
+       C
 8. The JavaScript engine “V8” was developed by:
 
    * A) Mozilla
@@ -80,7 +80,7 @@
     * C) Selector
     * D) Declaration
     #### ANSWER:
-       D
+       C
 
 11. What role does DNS play in web browsing?
 
@@ -89,7 +89,7 @@
     * C) Translates domain names to IP addresses
     * D) Stores user session cookies
 #### ANSWER:
-       A
+       C
 12. Which rendering engine powers Chromium-based browsers like Chrome and Brave?
 
     * A) Trident
@@ -113,7 +113,7 @@
     * C) It replaced CSS rendering
     * D) It integrated SQL parsing
     #### ANSWER:
-       C
+       B
 
 15. Which of the following is **NOT** a valid HTTP method?
 

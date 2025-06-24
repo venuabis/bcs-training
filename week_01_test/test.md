@@ -69,8 +69,8 @@ number
 ```
 #### ANSWER
 ```js
-var a= prompt("enter a number");
-console.log(a);
+var a= + prompt("enter a number");
+console.log(typeof(a));
 ```
 #### Example 2
 
@@ -83,8 +83,8 @@ number
 ```
 ### ANSWER
 ```js
-var a= prompt("enter a number");
-console.log(a);
+var a= + prompt("enter a number");
+console.log(typeof(a));
 ```
 </details>
 
@@ -202,7 +202,7 @@ if(temp>=120)
 {
     console.log("overheated!");
 
-}else if(temp<=10)
+}else if(temp<=120 &&  temp>=10)
 {
     console.log("frozen!");
 
