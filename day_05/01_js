@@ -1,0 +1,5 @@
+const r1=[ 100,200];
+const r2=[ 100,200];
+const r3= [...r1,...r2];
+console.log(r3);
+
