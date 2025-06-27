@@ -1,0 +1,28 @@
+const {name,address,hobbies:[,hobbies]}= {
+            name:"abishek",
+            age:23,
+            address:{
+                city:"trichy",
+                state:"tamilnadu",
+            },
+            hobbies: ["cricket","football","carrom"],
+};
+console.log(hobbies);
+
+const book = {
+  name: "Harry Potter II: Chamber of Secrets",
+  author: "J.K Rowling",
+  authorAge:45,
+
+};
+
+const details = {
+  year: 2002,
+  price: 1200,
+  authorAge:55,
+};
+
+// console.log(book.author);
+
+const fullDetails = {...details,...book};
+console.log(fullDetails)
