@@ -28,10 +28,6 @@ function sayHello()
      // 2 .partial application.
      // 3. point free style.
 
-
-
-
-    const add = (x) => (y) => x + y;
-    
+     const add = (x) => (y) => x + y;
     console.log(add(5)(9));
     
