@@ -77,7 +77,7 @@ const getTitlesAndRatings = (movies) =>
 console.log(getTitlesAndRatings(movies));
 
 ///----------------------------------------------------------------------------------------------------
-const movies = [
+const movies1= [
   {
     id: 1,
     title: "Baahubali",
@@ -99,7 +99,9 @@ const movies = [
 // Write a function that compiles all ratings into a single array
 const getAllRatings = (movies) => 
   // Your code here
- movies.reduce((acc,curr) => [...acc,...curr.ratings]   ,[]);
+ movies.reduce((acc,curr) => [...acc,...curr.ratings],[]);
 
 
 console.log(JSON.stringify(getAllRatings(movies)));
+
+
