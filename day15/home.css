@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        height: 50px;
+    }
+    button{
+        border-radius: 80px;
+        color:white;
+        background-color: blue;
+        border:none;
+    }
+    header > nav ul{
+        list-style: none;
+        display: flex;
+        gap:8px;
+    }
+    li > a{
+        text-decoration: none;
+    }
+}
