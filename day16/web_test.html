@@ -4,54 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style> 
-        .webpage{
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        ul {
+          gap: 25px;
+          display: flex;
+          li {
+            list-style: none;
             display: flex;
+          }
         }
+      }
+      
+      .pic {
+        width: 500px;
+        height: 250px;
+        object-fit: cover;
+      }
+      .para{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
     </style>
   </head>
   <body>
-    <div class="webpage">
-      <header>
-        <img src="logo.svg" />
-        <img src="image-web-3-mobile.jpg" />
+    <!-- <div class="webpage"> -->
+    <header>
+      <img src="logo.svg" />
 
-        <ul>
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
-        </ul>
-      </header>
-      <div class="para">
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-          <button>Read more</button>
-        </p>
-      </div>
-      <div class="new">
-        <h1>New</h1>
-        <p>Hydrogen VS Electric Cars</p>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <hr />
-        <h1>The Downsides of AI Artistry</h1>
-        <p>
-          What are the possible adverse effects of on-demand AI image
-          generation?
-        </p>
-        <hr />
-        <h1>Is VC Funding Drying Up?</h1>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means.
-        </p>
+      <ul>
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+    </header>
+    <div class="big">
+      <img class="pic" src="image-web-3-mobile.jpg" />
+        
+        <div class="para">
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+                We dive into the next evolution of the web that claims to put the
+                power of the platforms back into the hands of the people. But is it
+                really fulfilling its promise?
+                <button>Read more</button>
+            </p>
+        </div>
+        <div class="new">
+            <h1>New</h1>
+            <p>Hydrogen VS Electric Cars</p>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr />
+            <h1>The Downsides of AI Artistry</h1>
+            <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+            </p>
+            <hr />
+            <h1>Is VC Funding Drying Up?</h1>
+            <p>
+                Private funding by VC firms is down 50% YOY. We take a look at what
+                that means.
+            </p>
+        </div>
 
         </div>
-      </div>
-    </div>
+      </div> 
+     <!-- </div> -->
   </body>
 </html>
