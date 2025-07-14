@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Waiting for next Spider-man Homecoming</h1>
+    <h1>Superman movie was Meh!!</h1>
+
+    <h2>Hobbies</h2>
+    <ul class="items"></ul>
+
+    <script>
+      console.log(document);
+      //   Accessing DOM via JS
+      const reviews = document.getElementsByTagName("h1");
+
+      //   Read
+      console.log(reviews); // HTML Collection
+      // console.log(reviews[0].innerText);
+      console.log(reviews[1].innerText);
+
+      //   Update
+      reviews[0].innerText = reviews[0].innerText.toUpperCase();
+      reviews[0].innerText = reviews[0].innerText.split(" ").join("!! ") + "!!";
+      const quoteContainer = document.querySelector(".container");
+      //   quoteContainer.append(para1);
+
+      const hobbies = [
+        "📚 Reading",
+        "🎨 Painting",
+        "📸 Photography",
+        "🥾 Hiking",
+        "🌱 Gardening",
+        "👨‍🍳 Cooking",
+        "🎶 Playing musical instruments",
+        "💃 Dancing",
+        "✈️ Traveling",
+        "🧶 Knitting",
+      ];
+      //   items.join(",");
+      for (let hob of hobbies) {
+        const items = document.createElement("li");
+        const hob = document.querySelector(items);
+        hob.innerText = hobbi;
+        hob.append(items);
+      }
+    </script>
+  </body>
+</html>
