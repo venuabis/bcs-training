@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITIONSSS</title>
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0px;
+        display: grid;
+        place-content: center;
+      }
+      .positions {
+        /* background-color: rgb(180, 180, 31); */
+        position: relative;
+        width: 200px;
+        aspect-ratio: 1/1;
+        > img {
+          width: 100%;
+          border-radius: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        > h3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          aspect-ratio: 1/1;
+          background-color: darkgreen;
+          color: white;
+          border-radius: 50%;
+          position: absolute;
+          top: -21px;
+          left: 139px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="positions">
+      <img src="images.jpeg" />
+      <h3>8</h3>
+    </div>
+  </body>
+</html>
