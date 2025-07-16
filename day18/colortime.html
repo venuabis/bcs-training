@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const colorChange = setInterval(() => {
+        const colors = ["crimson", "orange", "teal", "purple"];
+        document.body.style.background = `${colors}`;
+      });
+      console.log(colorChange), 1000 * 2;
+
+      //   Task 1.2
+      //   Every 2s body color must change and then cycle
+    </script>
+  </body>
+</html>
