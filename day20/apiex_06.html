@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol class="flag"></ol>
+    <script>
+      // API Endpoint | fetch -> Promise
+      fetch(
+        "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital"
+      )
+        .then((res) => res.json())
+        .then((countries) => {
+          const result = countries
+            // .filter((country) => country.population >= 10_000_000)
+            // .sort((a, b) => b.population - a.population)
+            .map(
+              (countryName) =>
+                `<div>
+                <img src="${countryName.flags.png}"/>
+                </div>
+                <h2>
+                   ${countryName.name.common}</h2>
+                   <h2>${countryName.population}</h2>
+                   <h2>${countryName.capital}</h2>
+                   <h2>${countryName.region}</h2>`
+            );
+          document.querySelector(".flag").innerHTML = result.join(" ");
+        });
+    </script>
+  </body>
+</html>

@@ -2,7 +2,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+    max-width: 900px;
+    margin: 0px auto;
+    > img{
         height: 50px;
     }
     button{
@@ -10,13 +12,22 @@ header{
         color:white;
         background-color: blue;
         border:none;
+        border:8px 12px;
     }
+}
+
     header > nav ul{
         list-style: none;
         display: flex;
         gap:8px;
-    }
+        padding:0px;
+        font-family: sans-serif;
+    
     li > a{
         text-decoration: none;
+        color:blue ;
+        &:hover{
+            color:yellowgreen;
+        }
     }
-}
+    }
