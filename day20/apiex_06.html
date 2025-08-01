@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .flag {
+        background: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 5px;
+      }
+      .gird-countries {
+        background: white;
+        width: 300px;
+        font-family: sans-serif;
+        border-radius: 16px;
+        overflow: hidden;
+        > img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+        }
+        .country-details {
+          padding: 0px 16px 8px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <ol class="flag"></ol>
+    <div class="flag"></div>
     <script>
       // API Endpoint | fetch -> Promise
       fetch(
@@ -19,16 +42,18 @@
             // .sort((a, b) => b.population - a.population)
             .map(
               (countryName) =>
-                `<div>
+                `<div class="gird-countries">
                 <img src="${countryName.flags.png}"/>
-                </div>
+                <div class="country-details">
                 <h2>
-                   ${countryName.name.common}</h2>
-                   <h2>${countryName.population}</h2>
-                   <h2>${countryName.capital}</h2>
-                   <h2>${countryName.region}</h2>`
+                  ${countryName.name.common}</h2>
+                  <h2>${countryName.population}</h2>
+                  <h2>${countryName.capital}</h2>
+                  <h2>${countryName.region}</h2>
+                  </div>
+                  </div>`
             );
-          document.querySelector(".flag").innerHTML = result.join(" ");
+          document.querySelector(".flag").innerHTML = result.join("");
         });
     </script>
   </body>
